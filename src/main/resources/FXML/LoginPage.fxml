@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../CSS/LoginPageStylesheet.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tutorials.valeriya_login.Controllers.PageController">
+   <StackPane prefHeight="600.0" prefWidth="800.0">
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" scaleX="1.15" scaleY="1.17">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <Image url="@../MISC/maldives.jpg" />
+      </ImageView>
+   </StackPane>
+   <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="608.0" prefWidth="419.0" spacing="1.0" styleClass="LoginVBox" stylesheets="@../CSS/LoginPageStylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuButton fx:id="menu_default_BTN" mnemonicParsing="false" styleClass="LanguageSelection" text="Language">
+         <items>
+            <MenuItem fx:id="menu_Spanish_BTN" mnemonicParsing="false" text="SPANISH">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../MISC/spanish.png" />
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menu_French_BTN" mnemonicParsing="false" text="FRENCH">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../MISC/france.png" />
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menu_English_BTN" mnemonicParsing="false" text="English">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../MISC/englad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+         </items>
+         <VBox.margin>
+            <Insets left="280.0" top="30.0" />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../MISC/world.png" />
+            </ImageView>
+         </graphic>
+      </MenuButton>
+      <Text fx:id="create_Acc_TXT" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="createAccountTex" text="Create your account!">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="create_Acc_subtext1_TXT" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="createAccountSubText" text="Create an account to enjoy all the services">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="create_Acc_subtext2_TXT" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="createAccountSubText" text="without any ads for free!" />
+      <VBox prefHeight="151.0" prefWidth="255.0" styleClass="userinputfields">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <TextField fx:id="username_TF" prefHeight="42.0" prefWidth="255.0" promptText="Username" />
+         <TextField fx:id="email_TF" prefHeight="42.0" promptText="Email" />
+         <StackPane>
+            <TextField fx:id="password_TF" prefHeight="42.0" promptText="Password" />
+            <Button fx:id="passwordvisualise_BTN" mnemonicParsing="false" styleClass="passwordeye">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../MISC/eyepass.png" />
+                  </ImageView>
+               </graphic>
+               <StackPane.margin>
+                  <Insets left="180.0" />
+               </StackPane.margin>
+            </Button>
+         </StackPane>
+      </VBox>
+      <AnchorPane prefHeight="152.0" prefWidth="244.0" styleClass="signUpArea">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+         <Button fx:id="signup_BTN" layoutX="22.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="sigupButton" stylesheets="@../CSS/LoginPageStylesheet.css" text="Sign Up" />
+         <Button fx:id="contApp_BTN" layoutX="22.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" styleClass="comApple" text="Continue with Apple">
+            <graphic>
+               <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../MISC/Apple_Logo.png" />
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="contgoogle_BTN" layoutX="22.0" layoutY="76.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="200.0" styleClass="conGoogle" text="Continue with Google">
+            <graphic>
+               <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../MISC/Google.png" />
+               </ImageView>
+            </graphic>
+         </Button>
+      </AnchorPane>
+      <HBox spacing="10.0" styleClass="signIn">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <Text fx:id="Accquest_txt" strokeType="OUTSIDE" strokeWidth="0.0" text="Already Have An Account?" />
+         <Button fx:id="signIn_BTN" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" styleClass="signinButton" text="Sign In">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+            <padding>
+               <Insets bottom="20.0" />
+            </padding>
+         </Button>
+      </HBox>
+   </VBox>
+</AnchorPane>

@@ -1,0 +1,83 @@
+.LoginVBox{
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
+
+.LanguageSelection {
+    -fx-background-color: transparent;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-border-color: #a6a5a5;
+}
+
+
+
+.createAccountTex{
+    -fx-font-family: Calibri;
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.createAccountSubText {
+    -fx-font-family:"Calibri Light";
+    -fx-font-size: 15;
+    -fx-text-fill: #000000;
+}
+
+.userinputfields{
+
+   -fx-spacing: 10;
+}
+
+.passwordeye{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+
+.userinputfields .text-field{
+    -fx-background-color: transparent;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-border-color: #a6a5a5;
+
+}
+
+.signUpArea Button{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 1.3em;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}
+.signUpArea Button:hover {
+ -fx-cursor: hand;
+}
+
+.signinButton{
+    -fx-background-color: transparent;
+}
+.signinButton:hover {
+
+ -fx-cursor: hand;
+}
+
+.sigupButton{
+    -fx-background-color: #a0dde3;
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}
+
+.conGoogle{
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-font-size: 1.1em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}
+
+.comApple{
+    -fx-background-color: rgba(0, 0, 0, 0.9);
+    -fx-text-fill: white;
+    -fx-font-size: 1.1em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}
+
